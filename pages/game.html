@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  
+  <style>
+    @font-face {
+      font-family: Dotted;
+      src: url(../assets/Dotted.ttf);
+    }
+    body {
+      font-family: Dotted;
+      background-color: black;
+      text-align: center;
+    }
+    
+    #gameScrn {
+      border-style: dotted;
+      border-color: green;
+    }
+    
+    #hiScore {
+      margin-left: 90px;
+    }
+    
+    label {
+      color: green;
+      font-size: small;
+    }
+    
+    #retryBtn {
+      background: none;
+      border-style: dotted;
+      border-color: green;
+      color: green;
+      font-family: Dotted;
+      width: 128px;
+      height: 50px;
+      display: none;
+    }
+    
+    #mobileCtrl {
+      margin-top: 90px;
+    }
+    
+    #mobileCtrl > button {
+      width: 60px;
+      height: 60px;
+      margin: 6px;
+      background: none;
+      border-style: dotted;
+      border-color: green;
+      color: green;
+      font-family: dotted;
+      font-size: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <label id="score" for="gameScrn">Score: 0</label>
+  <label id="hiScore" for "gameScrn">High Score: 0</label><br>
+  <canvas id="gameScrn" width="320" height="320"></canvas>
+  <button id="retryBtn" onclick="retry()">Retry?</button>
+  
+  <div id="mobileCtrl">
+    <button id="upBtn" onclick="mobileCtrl('up')">Up</button><br>
+    <button id="leftBtn" onclick="mobileCtrl('left')">Left</button>
+    <button id="ffButton" onclick="">»</button>
+    <button id="rightBtn" onclick="mobileCtrl('right')">Right</button><br>
+    <button id="downBtn" onclick="mobileCtrl('down')">Down</button>
+  </div>
+  
+  <script src="../main.js"></script>
+</body>
+
+</html>
