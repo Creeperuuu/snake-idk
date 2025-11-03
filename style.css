@@ -1,0 +1,33 @@
+@font-face {
+  font-family: Dotted;
+  src: url(./assets/Dotted.ttf);
+}
+
+body {
+  text-align: center;
+  background-color: black;
+}
+
+#startTxt {
+  font-family: Dotted;
+  font-weight: normal;
+  font-size: 70px;
+  color: green;
+  margin-top: 60px;
+}
+
+#startBtn {
+  background: none;
+  border: none;
+}
+
+#startImg {
+ width: 256px;
+ height: auto;
+}
+
+#startImg:hover {
+  width: 250px;
+  height: auto;
+  display: initial;
+}
